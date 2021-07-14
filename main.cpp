@@ -17,7 +17,7 @@ public:
 class RGBA {
     uint8_t m_red{0}, m_green{0}, m_blue{0}, m_alpha{255};
 public:
-    RGBA() {}
+    RGBA() = default;
 
     RGBA(uint8_t i_red, uint8_t i_green, uint8_t i_blue, uint8_t i_alpha) :
             m_red{i_red}, m_green{i_green}, m_blue{i_blue}, m_alpha{i_alpha} {}
